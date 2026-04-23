@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class HelloController {
-
+//localhost:8080/api/hello
     @GetMapping("/hello")
     public String hello() {
         return "Hello, World! Welcome to AspringDemo.";
     }
-
+//localhost:8080/api/helloJson
         @GetMapping("/helloJson")
     public Map<String, String> helloJson() {
         Map<String, String> response = new HashMap<>();
